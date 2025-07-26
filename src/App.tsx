@@ -14,7 +14,7 @@ import { Helmet } from "react-helmet";
 const App = () => {
   return (
     <BrowserRouter>
-            <Helmet>
+      <Helmet>
         <title>AZMTH - 24x7 AI Personal Assistant</title>
         <meta
           name="description"
@@ -28,9 +28,26 @@ const App = () => {
         <meta
           property="og:description"
           content="Manage your tasks, stay informed, and boost productivity with AZMTH."
-        />  
-        <meta property="og:image" content="./logo.svg" />
+        />
+        <meta property="og:image" content="/azmth.svg" />
         <meta property="og:url" content="https://azmth.globaltfn.tech" />
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="/apple-touch-icon.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="/favicon-32x32.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="/favicon-16x16.png"
+        />
       </Helmet>
       <div className="bg-gradient-to-b from-[#0b0f10] to-[#0f3d4c] min-h-screen">
         <Analytics />
